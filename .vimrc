@@ -1,9 +1,19 @@
+packloadall!
+
 so ~/.vim/plugins.vim							" Load the plugins
+
+"---------- Dracula color scheme ----------"
+set t_CO=256
+let g:dracula_colorterm = 0						" Fix dracula grey background
+let g:dracula_italic = 0						" Fix dracula blue highlights
 
 syntax enable
 colorscheme dracula
 packadd! dracula
 
+
+
+"---------- General settings ----------"
 set backspace=indent,eol,start						" Make backspace behave like any other editor
 let mapleader=','							" Change the default Leader to a comma for ease of use
 set number								" Show line numbers
@@ -13,6 +23,8 @@ set number								" Show line numbers
 "---------- Search ----------"
 set hlsearch
 set incsearch
+
+
 
 "---------- Mappings ----------"
 
